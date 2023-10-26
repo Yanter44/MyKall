@@ -1,0 +1,33 @@
+﻿.logo {
+
+}
+
+.block1 {
+	font-size: 18px;
+	font-style: oblique;
+	margin-bottom: 30%;
+    font-stretch: expanded;
+	text-align: center;
+}
+.razrabOne {
+	position: relative;
+	right: 50%;
+	top: 0px;
+	width: 200px;
+	height:200px;
+}
+
+.nav-item {
+	position: relative;
+	
+	top: 0px;
+	font-size: 8px;
+}
+.navbar-nav flex-grow-1 {
+	position: relative;
+	right: 50%;
+	top: 0px;
+}
+
+
+

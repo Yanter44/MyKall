@@ -1,0 +1,23 @@
+﻿@model Logging
+@{
+    ViewData["Title"] = "Loging";
+}
+<div>
+      <h1 class="display-4">Loging</h1>
+</div>
+<body>
+
+    <form method="post" asp-controller="Home" asp-action="CheckLogging">
+    <p asp-for="Login">Login</p>
+    <input asp-for="Login" />
+    <span asp-validation-for="Login"></span>
+
+    <p asp-for="Password">Password</p>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+
+    <input type="Submit" value="Отправить" />
+</form>
+</body>
+
+   

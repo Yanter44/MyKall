@@ -1,0 +1,33 @@
+﻿@model Registr
+@{
+    ViewData["Title"] = "Registr";
+}
+  <head>
+        <link rel="stylesheet" href="/css/RegisterForm.css">
+  </head>
+  
+<body>
+  
+    <h1 class="RegH1">Registration</h1>
+
+    <div class="loginForm">
+         
+<form method="post" asp-controller="Home" asp-action="CheckRegistr">
+    <p asp-for="Login">Login</p>
+    <input asp-for="Login" />
+    <span asp-validation-for="Login"></span>
+
+    <p asp-for="EMail">Email</p>
+    <input asp-for="EMail" />
+    <span asp-validation-for="EMail"></span>
+
+    <p asp-for="Password">Password</p>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+
+    <input type="Submit" value="Отправить" />
+</form>
+
+
+</div>
+</body>
