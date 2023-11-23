@@ -1,4 +1,5 @@
 ﻿
+@model LerningAsp.Entyties.User
 @{
     ViewData["Title"] = "Profile";
 }
@@ -6,8 +7,16 @@
     <link rel="stylesheet" href="~/css/profile.css" />
 </head>
 <body>
+    <h1>@Model.Login<h1/>
+    <h2>@Model.Profile.Description</h1>
+    @if (!string.IsNullOrEmpty(Model.Profile?.ImagePath))
+    {
+            <img src="@Url.Action("GetImage", "Home", new { imagePath = Model.Profile.ImagePath })"  width="100" height="100"/>
+    }
 
-    <h1>@User.Identity.Name</h1>
-    <img class="UserProfileImage" src="/Images/UserImgForAsp.png" />
+    <form method="post" asp-controller="Home"  asp-action="UploadPhoto" enctype="multipart/form-data">
+    <input type="file" name="image" /><br>
+    <input type="submit" value="Загрузить" />
+    </form>
 
 </body>

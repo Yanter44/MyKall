@@ -3,6 +3,7 @@
     background-color: #333;
     overflow: hidden;
     display: flex;
+    position: relative;
 
 }
 
@@ -68,6 +69,21 @@
     text-align:left;
     color:black;
 }*/
+.FindGuys {
+    position: absolute;
+    color: gray;
+    left: 75%;
+   top: 30%;
+}
+.FindGuysImage {
+    position: absolute;
+    left: 73%;
+    width: 1px;
+    height: 1px;
+    top: 25%;
+}
+
+
 
 
 

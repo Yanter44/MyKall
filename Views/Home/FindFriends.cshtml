@@ -1,0 +1,38 @@
+﻿@using LerningAsp.Entyties;
+@model List<User>
+@{
+    ViewData["Title"] = "Search";
+}
+<head>
+  
+    </head>
+
+    <body>
+
+
+        <h1>Find Friend</h1>
+
+        <form method="get"  asp-controller="Home"  asp-action="Search">
+    <input type="text" name="SearchNameUser" />
+    <button type="submit">Search</button>
+</form>
+@if (Model != null)
+{
+    @foreach (var user in Model)
+    {
+        <div>       
+            <span>@user.Login</span>      
+            <span>@user.Email</span>
+                @if (!string.IsNullOrEmpty(user.Profile?.ImagePath))
+                {
+                    <img src="data:image;base64,@Convert.ToBase64String(ViewBag.ImagePath)" width="100" height="100" />
+                }
+                else
+                {
+                                            <img src="/Images/regUser.png" width="100" height="100" />
+                }
+
+        </div>
+    }
+}
+    </body>
