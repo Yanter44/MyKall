@@ -1,36 +1,14 @@
-﻿main input[type="Submit"] {
-    text-decoration: none;
-    display: inline-block;
-    width: 140px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 45px;
-    margin: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-    transition: .3s;
-}
-main form span {
-    display: block;
-    margin: 10px 0;  
+﻿.buttonnew {
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
 }
 
-.loginForm {
-    margin-top: 2%;
-    display: block;
-    margin-left: 40%;
-    border: 3px solid gray;
-    border-radius: 20px;
-    width: 200px;
-    height: 400px;
+    .buttonnew :hover {
+        box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+    }
+
+.button-container {
+    padding: 40px;
 }
-
- 
-
